@@ -2,23 +2,22 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+import TaskTable from './Components/TaskTable/TaskTable';
+import AddTask from './Components/AddTask/AddTask';
+
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="main">
+        <div className="container">
+          <div className="table-portion">
+            <TaskTable />
+          </div>
+          <div className="tools-portion">
+            <AddTask />
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

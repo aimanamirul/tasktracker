@@ -1,0 +1,26 @@
+.NavBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    padding: 1rem;
+    background-color: hsl(216, 100%, 19%);
+}
+
+.NavBar .linkspace {
+    width: 5vw;
+    text-align: center;
+}
+
+.NavBar a {
+    text-decoration: none;
+    color: hsl(216, 100%, 95%);
+    transition: 0.2s;
+    line-height: 16px;
+}
+
+.NavBar a:hover{
+    font-size: larger;
+}
+
+
+

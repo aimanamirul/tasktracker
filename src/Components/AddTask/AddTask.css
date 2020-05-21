@@ -1,0 +1,45 @@
+.AddTask {
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(246, 73%, 75%);
+    border-radius: 8px;
+    margin: 2rem;
+}
+
+.AddTask .title {
+    background-color: hsl(246, 73%, 25%);
+    color: white;
+    font-weight: bold;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.AddTask .form {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.AddTask .form label {
+    align-self: flex-start;
+}
+
+.AddTask form .input-box {
+    width: 250px;
+    line-height: 25px;
+    font-size: 15px;
+    padding: 0.4rem;
+    border-radius: 5px;
+    border: none;
+    margin: 0.5rem;
+}
+
+.AddTask form .submit-btn {
+    align-self: center;
+    width: 120px;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+

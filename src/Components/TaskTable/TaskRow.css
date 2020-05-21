@@ -1,0 +1,25 @@
+.TaskRow {
+    text-align: left;
+    width: 100%;
+    border-radius: 8px;
+    background-color: hsl(246, 73%, 75%);
+    margin-top: 1rem;
+}
+
+.TaskRow .title {
+    background-color: hsl(246, 73%, 25%);
+    color: white;
+    font-weight: bold;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.TaskRow .title h2 {
+    padding: 0.7em;
+    margin: 0;
+}
+
+.TaskRow .body p{
+    margin: 0;
+    padding: 1em;
+}
