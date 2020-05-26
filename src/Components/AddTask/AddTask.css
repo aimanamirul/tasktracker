@@ -36,6 +36,8 @@
 }
 
 .AddTask form .submit-btn {
+    margin-top: 1rem;
+    font-weight: bold;
     align-self: center;
     width: 120px;
     padding: 0.5rem;

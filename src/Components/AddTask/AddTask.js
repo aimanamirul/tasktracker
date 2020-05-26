@@ -70,7 +70,6 @@ class AddTask extends Component {
                         onChange={this.handleDateChange}
                         className="input-box"
                     /></label>
-                    <p>{this.state.due.toLocaleDateString()}</p>
                     <input className="submit-btn" type="submit" value="Add Task" />
                 </form>
             </div>

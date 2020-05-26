@@ -11,7 +11,8 @@ const TaskRow = props => (
         <div className="body">
             <p>Description: {props.data.desc}</p>
             <p>Due Date: {new Date(props.data.due).toLocaleDateString()} </p>
-            <a href="#" onClick={() => {props.deleteTask(props.data._id)}}>Remove</a>
+            <p>Status: {props.data.status}</p>
+            <a className="remtask" href="#" onClick={() => { props.deleteTask(props.data._id) }}>Remove This Task</a>
         </div>
     </div>);
 
@@ -33,12 +34,16 @@ class TaskTable extends Component {
     }
 
     deleteTask(id) {
-        axios.delete('http://localhost:5000/tasks/del/' + id)
-            .then(response => { console.log(response.data) });
+        if (window.confirm("Confirm delete?")) {
+            axios.delete('http://localhost:5000/tasks/del/' + id)
+                .then(response => { console.log(response.data) });
 
-        this.setState({
-            data: this.state.data.filter(el => el._id !== id)
-        })
+            this.setState({
+                data: this.state.data.filter(el => el._id !== id)
+            })
+        } else {
+            return;
+        }
     }
 
     taskList() {

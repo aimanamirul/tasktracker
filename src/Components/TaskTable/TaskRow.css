@@ -19,7 +19,22 @@
     margin: 0;
 }
 
+.TaskRow .body {
+    padding: 1em;
+}
+
 .TaskRow .body p{
     margin: 0;
-    padding: 1em;
+    padding: 1em 0 1em 1em;
+}
+
+.TaskRow .body .remtask {
+    font-weight: bold;
+    color: black;
+    padding: 1em 0 1em 1em;
+    transition: 0.3s;
+}
+
+.TaskRow .body .remtask:hover {
+    color: white;
 }
